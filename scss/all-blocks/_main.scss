@@ -1,3 +1,40 @@
 .main {
     flex-grow: 1;
+    .hero {
+        margin-top: 45px;
+        width: 500px;
+        height: 500px;
+        background-image: url("../../img/Ramadan-home.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .hero__box {
+        padding: 50px 0px 0px 600px;
+    }
+
+    // .hero__title {
+    // }
+
+    .hero__img {
+        position: absolute;
+        top: 35%;
+        right: 15%;
+        width: 500px;
+        height: 500px;
+        background-image: url("../../img/masjit_bg.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .hero__img2 {
+        position: absolute;
+        top: 1px;
+        right: 20px;
+        width: 100px;
+        height: 790px;
+        background-image: url("../../img/ilistr-right.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
