@@ -342,6 +342,14 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "ArabDances";
+  src: url("ArabDancesMediumItalic.woff2") format("woff2"), url("ArabDancesMediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -437,8 +445,54 @@ img {
           flex-grow: 1;
 }
 
-.main .hero {
-  margin-top: 45px;
+.main .hero__box {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  max-width: 650px;
+}
+
+.main .hero__title {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.main .ml9 {
+  position: relative;
+  margin-bottom: 15px;
+  font-family: "ArabDances";
+  font-weight: 200;
+  font-size: 4em;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.main .ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0px;
+  overflow: hidden;
+}
+
+.main .ml9 .letter {
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.main .hero__desc {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.main .hero__img {
+  position: absolute;
+  top: 25%;
   width: 500px;
   height: 500px;
   background-image: url("../../img/Ramadan-home.svg");
@@ -446,13 +500,9 @@ img {
   background-size: contain;
 }
 
-.main .hero__box {
-  padding: 50px 0px 0px 600px;
-}
-
-.main .hero__img {
+.main .hero__img1 {
   position: absolute;
-  top: 35%;
+  top: 30%;
   right: 15%;
   width: 500px;
   height: 500px;
@@ -470,5 +520,38 @@ img {
   background-image: url("../../img/ilistr-right.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.calendar .calendar__img {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  right: 0px;
+  width: 700px;
+  height: 700px;
+  background-image: url("../../img/masjit-bg-calendar.svg");
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.calendar .calendar__title {
+  font-family: "ArabDances";
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.calendar .calendar__cakvim {
+  margin: 0 auto;
+  width: 1000px;
+  height: 1000px;
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 /*# sourceMappingURL=main.css.map */

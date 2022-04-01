@@ -1,7 +1,52 @@
 .main {
     flex-grow: 1;
-    .hero {
-        margin-top: 45px;
+    .hero__box {
+        position: absolute;
+        top: 40%;
+        right: 10%;
+        max-width: 650px;
+    }
+
+    .hero__title {
+        margin: 0;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .ml9 {
+        position: relative;
+        margin-bottom: 15px;
+        font-family: "ArabDances";
+        font-weight: 200;
+        font-size: 4em;
+        font-weight: 600;
+        line-height: 50px;
+    }
+
+    .ml9 .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.2em;
+        padding-right: 0.05em;
+        padding-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .ml9 .letter {
+        transform-origin: 50% 100%;
+        display: inline-block;
+        line-height: 1em;
+    }
+
+    .hero__desc {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .hero__img {
+        position: absolute;
+        top: 25%;
         width: 500px;
         height: 500px;
         background-image: url("../../img/Ramadan-home.svg");
@@ -9,16 +54,9 @@
         background-size: contain;
     }
 
-    .hero__box {
-        padding: 50px 0px 0px 600px;
-    }
-
-    // .hero__title {
-    // }
-
-    .hero__img {
+    .hero__img1 {
         position: absolute;
-        top: 35%;
+        top: 30%;
         right: 15%;
         width: 500px;
         height: 500px;

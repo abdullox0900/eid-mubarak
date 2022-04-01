@@ -1,2 +1,10 @@
 // FONTS
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;300;400;500;600;700&display=swap");
+
+@font-face {
+    font-family: "ArabDances";
+    src: url("ArabDancesMediumItalic.woff2") format("woff2"), url("ArabDancesMediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}

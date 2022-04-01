@@ -1,0 +1,33 @@
+.calendar {
+    .calendar__img {
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        right: 0px;
+        width: 700px;
+        height: 700px;
+        background-image: url("../../img/masjit-bg-calendar.svg");
+        opacity: 0.9;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .calendar__title {
+        font-family: "ArabDances";
+        font-size: 50px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .calendar__cakvim {
+        margin: 0 auto;
+        width: 1000px;
+        height: 1000px;
+        background: rgba(255, 255, 255, 0.21);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5.9px);
+        -webkit-backdrop-filter: blur(7.9px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+}
