@@ -193,31 +193,44 @@
     }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 411px) {
     .hero {
         .hero__box {
             margin-top: 5px;
         }
 
         .hero__img {
-            width: 310px;
-            height: 310px;
+            width: 300px;
+            height: 300px;
         }
 
         .hero__img1 {
             width: 350px;
             height: 200px;
-            top: 510px;
+            top: 410px;
             right: 3%;
         }
 
         .ml9 {
-            // font-size: px;
+            font-size: 30px;
+            font-weight: 700;
             line-height: 30px;
         }
 
         .hero__desc {
-            font-size: 14px;
+            margin: 0;
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .hero {
+        .ml9 {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 20px;
         }
     }
 }
