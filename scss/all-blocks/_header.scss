@@ -1,4 +1,6 @@
 .header {
+    // display: flex;
+    // align-items: center;
     padding: 30px 0px;
 
     .header__container {
@@ -23,5 +25,43 @@
         font-weight: 600;
         text-decoration: none;
         color: #351c02;
+    }
+
+    .header__burger-btn {
+        display: none;
+        position: relative;
+        top: 10px;
+        width: 55px;
+        height: 55px;
+        border: none;
+        background-color: transparent;
+        background-image: url("../../img/header-btn-burger.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        .header__logo {
+            display: none;
+        }
+
+        .header__mobil-logo {
+            width: 70px;
+            height: 70px;
+            background-image: url("../../img/islom-moon.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .header__nav {
+            display: none;
+        }
+
+        .header__burger-btn {
+            display: flex;
+        }
     }
 }

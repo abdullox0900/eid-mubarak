@@ -1,0 +1,145 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // position: relative;
+    padding-top: 50px; // flex-direction: column;
+    .hero__box {
+        // display: flex;
+        // flex-direction: ;
+        // position: absolute;
+        // top: 40%;
+        // right: 10%;
+        max-width: 550px;
+        z-index: 11;
+    }
+
+    .hero__title {
+        margin: 0;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .ml9 {
+        position: relative;
+        margin-bottom: 15px;
+        font-family: "ArabDances";
+        font-weight: 200;
+        font-size: 55px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+
+    .ml9 .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.2em;
+        padding-right: 0.05em;
+        padding-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .ml9 .letter {
+        transform-origin: 50% 100%;
+        display: inline-block;
+        line-height: 1em;
+    }
+
+    .hero__desc {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .hero__img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .hero__img1 {
+        position: absolute;
+        top: 40%;
+        right: 13%;
+        width: 500px;
+        height: 500px;
+        background-image: url("../../img/masjit_bg.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .hero__img2 {
+        position: absolute;
+        top: 1px;
+        right: 20px;
+        width: 100px;
+        height: 790px;
+        background-image: url("../../img/ilistr-right.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .hero__box {
+            position: absolute;
+            top: 40%;
+            right: 10%;
+            max-width: 500px;
+            z-index: 11;
+        }
+
+        .ml9 {
+            margin-bottom: 10px;
+            font-size: 50px;
+        }
+
+        .hero__img {
+            width: 350px;
+            height: 350px;
+        }
+
+        .hero__img1 {
+            right: 10%;
+        }
+
+        .hero__desc {
+            max-width: 480px;
+            margin: 0;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+
+    @media only screen and (max-width: 950px) {
+        .hero__box {
+            top: 35%;
+            right: 5%;
+            max-width: 500px;
+            z-index: 11;
+        }
+
+        .ml9 {
+            margin-bottom: 10px;
+            font-size: 50px;
+        }
+
+        .hero__img {
+            width: 350px;
+            height: 350px;
+        }
+
+        .hero__img1 {
+            right: 5%;
+        }
+
+        .hero__img2 {
+            display: none;
+        }
+
+        .hero__desc {
+            max-width: 480px;
+            margin: 0;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+}

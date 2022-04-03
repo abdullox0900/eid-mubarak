@@ -46,23 +46,212 @@
                 <h2 class="calendar__title animate__animated animate__fadeInDown">Ramadan Calendar 2022</h2>
                 <div class="calendar__img" data-aos="zoom-in"></div>
 
-                <div class="calendar__cakvim" data-aos="zoom-in-up">
-                    <table>
-                        <tr>
-                            <th>Ramadan</th>
-                            <th>Date</th>
-                            <th>Day</th>
-                            <th>Sehri</th>
-                            <th>Ifter</th>
-                        </tr>
-                        <tr>
-                            <td>01 Ramadan</td>
-                            <td>02 April 2022</td>
-                            <td>Friday</td>
-                            <td>04:47</td>
-                            <td>18:51</td>
-                        </tr>
-                    </table>
+                <div class="calendar__time" id="MyClockDisplay" data-aos="zoom-out" onload="showTime()"></div>
+
+                <div class="calendar__takvim" data-aos="zoom-in-up">
+                    <div class="calendar__wrapper">
+                        <div class="calendar__data-table">
+                            <table>
+                                <tr>
+                                    <th>Ramadan</th>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Sehri</th>
+                                    <th>Ifter</th>
+                                </tr>
+                                <!-- DAY1 -->
+                                <tr>
+                                    <td>01 Ramadan</td>
+                                    <td>02 April 2022</td>
+                                    <td>Saturday</td>
+                                    <td>04:47</td>
+                                    <td>18:51</td>
+                                </tr>
+                                <!-- DAY2 -->
+                                <tr>
+                                    <td>02 Ramadan</td>
+                                    <td>03 April 2022</td>
+                                    <td>Sunday</td>
+                                    <td>04:45</td>
+                                    <td>18:52</td>
+                                </tr>
+                                <!-- DAY3 -->
+                                <tr>
+                                    <td>03 Ramadan</td>
+                                    <td>04 April 2022</td>
+                                    <td>Monday</td>
+                                    <td>04:43</td>
+                                    <td>18:53</td>
+                                </tr>
+                                <!-- DAY4 -->
+                                <tr>
+                                    <td>04 Ramadan</td>
+                                    <td>05 April 2022</td>
+                                    <td>Tuesday</td>
+                                    <td>04:41</td>
+                                    <td>18:54</td>
+                                </tr>
+                                <!-- DAY5 -->
+                                <tr>
+                                    <td>05 Ramadan</td>
+                                    <td>06 April 2022</td>
+                                    <td>Wednesday</td>
+                                    <td>04:39</td>
+                                    <td>18:55</td>
+                                </tr>
+                                <!-- DAY6 -->
+                                <tr>
+                                    <td>06 Ramadan</td>
+                                    <td>07 April 2022</td>
+                                    <td>Thursday</td>
+                                    <td>04:37</td>
+                                    <td>18:56</td>
+                                </tr>
+                                <!-- DAY7 -->
+                                <tr>
+                                    <td>07 Ramadan</td>
+                                    <td>08 April 2022</td>
+                                    <td>Friday</td>
+                                    <td>04:35</td>
+                                    <td>18:55</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="calendar__data-table">
+                            <table>
+                                <tr>
+                                    <th>Ramadan</th>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Sehri</th>
+                                    <th>Ifter</th>
+                                </tr>
+                                <!-- DAY1 -->
+                                <tr>
+                                    <td>01 Ramadan</td>
+                                    <td>02 April 2022</td>
+                                    <td>Saturday</td>
+                                    <td>04:47</td>
+                                    <td>18:51</td>
+                                </tr>
+                                <!-- DAY2 -->
+                                <tr>
+                                    <td>02 Ramadan</td>
+                                    <td>03 April 2022</td>
+                                    <td>Sunday</td>
+                                    <td>04:45</td>
+                                    <td>18:52</td>
+                                </tr>
+                                <!-- DAY3 -->
+                                <tr>
+                                    <td>03 Ramadan</td>
+                                    <td>04 April 2022</td>
+                                    <td>Monday</td>
+                                    <td>04:43</td>
+                                    <td>18:53</td>
+                                </tr>
+                                <!-- DAY4 -->
+                                <tr>
+                                    <td>04 Ramadan</td>
+                                    <td>05 April 2022</td>
+                                    <td>Tuesday</td>
+                                    <td>04:41</td>
+                                    <td>18:54</td>
+                                </tr>
+                                <!-- DAY5 -->
+                                <tr>
+                                    <td>05 Ramadan</td>
+                                    <td>06 April 2022</td>
+                                    <td>Wednesday</td>
+                                    <td>04:39</td>
+                                    <td>18:55</td>
+                                </tr>
+                                <!-- DAY6 -->
+                                <tr>
+                                    <td>06 Ramadan</td>
+                                    <td>07 April 2022</td>
+                                    <td>Thursday</td>
+                                    <td>04:37</td>
+                                    <td>18:56</td>
+                                </tr>
+                                <!-- DAY7 -->
+                                <tr>
+                                    <td>07 Ramadan</td>
+                                    <td>08 April 2022</td>
+                                    <td>Friday</td>
+                                    <td>04:35</td>
+                                    <td>18:55</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="calendar__data-table">
+                            <table>
+                                <tr>
+                                    <th>Ramadan</th>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Sehri</th>
+                                    <th>Ifter</th>
+                                </tr>
+                                <!-- DAY1 -->
+                                <tr>
+                                    <td>01 Ramadan</td>
+                                    <td>02 April 2022</td>
+                                    <td>Saturday</td>
+                                    <td>04:47</td>
+                                    <td>18:51</td>
+                                </tr>
+                                <!-- DAY2 -->
+                                <tr>
+                                    <td>02 Ramadan</td>
+                                    <td>03 April 2022</td>
+                                    <td>Sunday</td>
+                                    <td>04:45</td>
+                                    <td>18:52</td>
+                                </tr>
+                                <!-- DAY3 -->
+                                <tr>
+                                    <td>03 Ramadan</td>
+                                    <td>04 April 2022</td>
+                                    <td>Monday</td>
+                                    <td>04:43</td>
+                                    <td>18:53</td>
+                                </tr>
+                                <!-- DAY4 -->
+                                <tr>
+                                    <td>04 Ramadan</td>
+                                    <td>05 April 2022</td>
+                                    <td>Tuesday</td>
+                                    <td>04:41</td>
+                                    <td>18:54</td>
+                                </tr>
+                                <!-- DAY5 -->
+                                <tr>
+                                    <td>05 Ramadan</td>
+                                    <td>06 April 2022</td>
+                                    <td>Wednesday</td>
+                                    <td>04:39</td>
+                                    <td>18:55</td>
+                                </tr>
+                                <!-- DAY6 -->
+                                <tr>
+                                    <td>06 Ramadan</td>
+                                    <td>07 April 2022</td>
+                                    <td>Thursday</td>
+                                    <td>04:37</td>
+                                    <td>18:56</td>
+                                </tr>
+                                <!-- DAY7 -->
+                                <tr>
+                                    <td>07 Ramadan</td>
+                                    <td>08 April 2022</td>
+                                    <td>Friday</td>
+                                    <td>04:35</td>
+                                    <td>18:55</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,6 +260,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/calendar.js"></script>
 
 
 </body>

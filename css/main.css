@@ -439,36 +439,82 @@ img {
   color: #351c02;
 }
 
+.header .header__burger-btn {
+  display: none;
+  position: relative;
+  top: 10px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../img/header-btn-burger.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .header .header__logo {
+    display: none;
+  }
+  .header .header__mobil-logo {
+    width: 70px;
+    height: 70px;
+    background-image: url("../../img/islom-moon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .header .header__nav {
+    display: none;
+  }
+  .header .header__burger-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.main .hero__box {
-  position: absolute;
-  top: 40%;
-  right: 10%;
-  max-width: 650px;
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
 }
 
-.main .hero__title {
+.hero .hero__box {
+  max-width: 550px;
+  z-index: 11;
+}
+
+.hero .hero__title {
   margin: 0;
   font-size: 50px;
   font-weight: 600;
 }
 
-.main .ml9 {
+.hero .ml9 {
   position: relative;
   margin-bottom: 15px;
   font-family: "ArabDances";
   font-weight: 200;
-  font-size: 4em;
+  font-size: 55px;
   font-weight: 600;
   line-height: 50px;
 }
 
-.main .ml9 .text-wrapper {
+.hero .ml9 .text-wrapper {
   position: relative;
   display: inline-block;
   padding-top: 0.2em;
@@ -477,33 +523,28 @@ img {
   overflow: hidden;
 }
 
-.main .ml9 .letter {
+.hero .ml9 .letter {
   -webkit-transform-origin: 50% 100%;
           transform-origin: 50% 100%;
   display: inline-block;
   line-height: 1em;
 }
 
-.main .hero__desc {
+.hero .hero__desc {
   margin: 0;
   font-size: 20px;
   font-weight: 400;
 }
 
-.main .hero__img {
-  position: absolute;
-  top: 25%;
+.hero .hero__img {
   width: 500px;
   height: 500px;
-  background-image: url("../../img/Ramadan-home.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
-.main .hero__img1 {
+.hero .hero__img1 {
   position: absolute;
-  top: 30%;
-  right: 15%;
+  top: 40%;
+  right: 13%;
   width: 500px;
   height: 500px;
   background-image: url("../../img/masjit_bg.svg");
@@ -511,7 +552,7 @@ img {
   background-size: contain;
 }
 
-.main .hero__img2 {
+.hero .hero__img2 {
   position: absolute;
   top: 1px;
   right: 20px;
@@ -522,10 +563,66 @@ img {
   background-size: contain;
 }
 
+@media only screen and (max-width: 1024px) {
+  .hero .hero__box {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    max-width: 500px;
+    z-index: 11;
+  }
+  .hero .ml9 {
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+  .hero .hero__img {
+    width: 350px;
+    height: 350px;
+  }
+  .hero .hero__img1 {
+    right: 10%;
+  }
+  .hero .hero__desc {
+    max-width: 480px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .hero .hero__box {
+    top: 35%;
+    right: 5%;
+    max-width: 500px;
+    z-index: 11;
+  }
+  .hero .ml9 {
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+  .hero .hero__img {
+    width: 350px;
+    height: 350px;
+  }
+  .hero .hero__img1 {
+    right: 5%;
+  }
+  .hero .hero__img2 {
+    display: none;
+  }
+  .hero .hero__desc {
+    max-width: 480px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
 .calendar .calendar__img {
   position: absolute;
   top: 30%;
-  left: 25%;
+  left: 27%;
   right: 0px;
   width: 700px;
   height: 700px;
@@ -542,16 +639,121 @@ img {
   text-align: center;
 }
 
-.calendar .calendar__cakvim {
+.calendar .calendar__takvim {
+  position: relative;
   margin: 0 auto;
-  width: 1000px;
-  height: 1000px;
-  background: rgba(255, 255, 255, 0.21);
+  padding: 10px;
+  width: 1100px;
+  min-height: 1500px;
+  background: rgba(240, 240, 234, 0.47);
+  border-radius: 20px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 1px solid rgba(240, 240, 234, 0.27);
+}
+
+.calendar .calendar__takvim::before {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/Half-Moon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: rotate(1.9turn);
+          transform: rotate(1.9turn);
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.calendar .calendar__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.calendar .calendar__data-table {
+  width: 95%;
+  height: 450px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  background: rgba(240, 240, 234, 0.47);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 1px solid rgba(240, 240, 234, 0.27);
+}
+
+.calendar .calendar__data-table table {
+  width: 100%;
+  text-align: center;
+}
+
+.calendar .calendar__data-table table tr th {
+  margin-bottom: 10px;
+  padding: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 7px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fccd54), to(#593710));
+  background: linear-gradient(180deg, #fccd54 0%, #593710 100%);
+}
+
+.calendar .calendar__data-table table tr td {
+  padding: 10px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  background-color: #707070;
+  background: rgba(35, 79, 187, 0.36);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  border: 1px solid rgba(35, 79, 187, 0.21);
+}
+
+.calendar .calendar__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: #000 1px 0 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 400px;
+  height: 100px;
+  background: rgba(240, 240, 234, 0.47);
   border-radius: 16px;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.9px);
+  backdrop-filter: blur(7.9px);
   -webkit-backdrop-filter: blur(7.9px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(240, 240, 234, 0.27);
 }
 /*# sourceMappingURL=main.css.map */
