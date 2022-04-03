@@ -173,6 +173,7 @@
 
 @media only screen and (max-width: 430px) {
     .hero {
+        padding-top: 25px;
         .hero__img {
             width: 330px;
             height: 330px;
@@ -186,7 +187,7 @@
         }
 
         .ml9 {
-            font-size: 30px;
+            font-size: 38px;
             line-height: 30px;
         }
     }
@@ -211,7 +212,7 @@
         }
 
         .ml9 {
-            font-size: 25px;
+            // font-size: px;
             line-height: 30px;
         }
 

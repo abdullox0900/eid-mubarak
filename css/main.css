@@ -474,6 +474,42 @@ img {
   }
 }
 
+@media only screen and (max-width: 430px) {
+  .header {
+    padding: 23px 0px;
+  }
+  .header .header__mobil-logo {
+    width: 60px;
+    height: 60px;
+    background-image: url("../../img/islom-moon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .header .header__burger-btn {
+    width: 35px;
+    top: 0px;
+    background-position: center center;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .header {
+    padding: 18px 0px;
+  }
+  .header .header__mobil-logo {
+    width: 50px;
+    height: 50px;
+    background-image: url("../../img/islom-moon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .header .header__burger-btn {
+    width: 35px;
+    top: 0px;
+    background-position: center center;
+  }
+}
+
 .main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -646,6 +682,9 @@ img {
 }
 
 @media only screen and (max-width: 430px) {
+  .hero {
+    padding-top: 25px;
+  }
   .hero .hero__img {
     width: 330px;
     height: 330px;
@@ -657,7 +696,7 @@ img {
     right: 3%;
   }
   .hero .ml9 {
-    font-size: 30px;
+    font-size: 38px;
     line-height: 30px;
   }
 }
@@ -677,7 +716,6 @@ img {
     right: 3%;
   }
   .hero .ml9 {
-    font-size: 25px;
     line-height: 30px;
   }
   .hero .hero__desc {
