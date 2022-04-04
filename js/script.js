@@ -8,7 +8,14 @@ AOS.init({
     duration: 1500,
 });
 
-var textWrapper = document.querySelector('.ml9 .letters');
+const textWrapper = document.querySelector('.ml9 .letters');
+const elMenuBtn = document.querySelector(".header__burger-btn");
+const elHeader = document.querySelector(".header");
+
+elMenuBtn.addEventListener("click", () => {
+    elHeader.classList.toggle("header--open");
+});
+
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({ loop: true })

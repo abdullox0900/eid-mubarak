@@ -453,6 +453,65 @@ img {
   cursor: pointer;
 }
 
+.header label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50px;
+  cursor: pointer;
+}
+
+.header label span {
+  background: #351c02;
+  border-radius: 10px;
+  height: 7px;
+  margin: 4px 0;
+  -webkit-transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.header span:nth-of-type(1) {
+  width: 40%;
+}
+
+.header span:nth-of-type(2) {
+  width: 80%;
+}
+
+.header span:nth-of-type(3) {
+  width: 60%;
+}
+
+.header input[type="checkbox"] {
+  display: none;
+}
+
+.header input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotatez(45deg) translate(7px, 1px);
+          transform: rotatez(45deg) translate(7px, 1px);
+}
+
+.header input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: rotatez(-45deg);
+          transform: rotatez(-45deg);
+}
+
+.header input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  width: 40%;
+  -webkit-transform: translate(18px, -10px) rotatez(45deg);
+          transform: translate(18px, -10px) rotatez(45deg);
+}
+
 @media only screen and (max-width: 768px) {
   .header .header__logo {
     display: none;
@@ -471,6 +530,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .header--open .header__nav {
+    display: inline-block;
   }
 }
 
@@ -727,7 +789,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 330px) {
   .hero .ml9 {
     font-size: 28px;
     font-weight: 700;
