@@ -8,14 +8,7 @@ AOS.init({
     duration: 1500,
 });
 
-const textWrapper = document.querySelector('.ml9 .letters');
-const elMenuBtn = document.querySelector(".header__burger-btn");
-const elHeader = document.querySelector(".header");
-
-elMenuBtn.addEventListener("click", () => {
-    elHeader.classList.toggle("header--open");
-});
-
+let textWrapper = document.querySelector('.ml9 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({ loop: true })
@@ -33,3 +26,10 @@ anime.timeline({ loop: true })
         easing: "easeOutExpo",
         delay: 1000
     });
+
+const elMenuBtn = document.querySelector(".header__burger-btn");
+const elHeader = document.querySelector(".header");
+
+elMenuBtn.addEventListener("click", () => {
+    elHeader.classList.toggle("header--open");
+});

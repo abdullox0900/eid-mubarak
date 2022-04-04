@@ -441,27 +441,16 @@ img {
 
 .header .header__burger-btn {
   display: none;
-  position: relative;
-  top: 10px;
-  width: 55px;
-  height: 55px;
-  border: none;
-  background-color: transparent;
-  background-image: url("../../img/header-btn-burger.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
 }
 
 .header label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50px;
+  padding-bottom: 7px;
   cursor: pointer;
 }
 
@@ -523,16 +512,64 @@ img {
     background-size: contain;
     background-repeat: no-repeat;
   }
-  .header .header__nav {
-    display: none;
-  }
-  .header .header__burger-btn {
+  .header label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: absolute;
+    right: 5px;
+    z-index: 2000;
+  }
+  .header__nav {
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 0px;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    padding: 25px 40px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #fff9d6;
+    -webkit-box-shadow: -3px 15px 10px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: -3px 15px 10px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    background-image: url("../../img/masjit_bg.svg");
+    background-position-x: -20px;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
   }
   .header--open .header__nav {
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    right: 0px;
+  }
+  .header--open .navbar__list {
+    margin-top: 70px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header--open .navbar__item + .navbar__item {
+    margin: 0;
+    margin-top: 30px;
+  }
+  .header--open .navbar__link {
+    font-size: 30px;
+  }
+  .header--open label {
+    position: fixed;
   }
 }
 
@@ -541,16 +578,11 @@ img {
     padding: 23px 0px;
   }
   .header .header__mobil-logo {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background-image: url("../../img/islom-moon.svg");
     background-size: contain;
     background-repeat: no-repeat;
-  }
-  .header .header__burger-btn {
-    width: 35px;
-    top: 0px;
-    background-position: center center;
   }
 }
 
@@ -564,11 +596,6 @@ img {
     background-image: url("../../img/islom-moon.svg");
     background-size: contain;
     background-repeat: no-repeat;
-  }
-  .header .header__burger-btn {
-    width: 35px;
-    top: 0px;
-    background-position: center center;
   }
 }
 
@@ -933,5 +960,23 @@ img {
   backdrop-filter: blur(7.9px);
   -webkit-backdrop-filter: blur(7.9px);
   border: 1px solid rgba(240, 240, 234, 0.27);
+}
+
+@media only screen and (max-width: 1150px) {
+  .calendar .calendar__takvim {
+    width: 1000px;
+  }
+  .calendar .calendar__data-table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+  }
+  .calendar .calendar__data-table table {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

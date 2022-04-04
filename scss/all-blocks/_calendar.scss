@@ -119,3 +119,21 @@
         border: 1px solid rgba(240, 240, 234, 0.27);
     }
 }
+
+@media only screen and (max-width: 1150px) {
+    .calendar {
+        .calendar__takvim {
+            width: 1000px;
+        }
+
+        .calendar__data-table {
+            display: flex;
+            justify-content: center;
+            width: 90%;
+        }
+
+        .calendar__data-table table {
+            width: 90%;
+        }
+    }
+}
