@@ -19,86 +19,6 @@
         text-align: center;
     }
 
-    .calendar__takvim {
-        position: relative;
-        margin: 0 auto;
-        padding: 10px;
-        width: 1100px;
-        min-height: 1500px;
-        background: rgba(240, 240, 234, 0.47);
-        border-radius: 20px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(7.9px);
-        -webkit-backdrop-filter: blur(7.9px);
-        border: 1px solid rgba(240, 240, 234, 0.27);
-        // z-index: 111;
-    }
-
-    .calendar__takvim::before {
-        position: absolute;
-        top: 5px;
-        left: 15px;
-        content: "";
-        width: 60px;
-        height: 60px;
-        background-image: url("../../img/Half-Moon.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        transform: rotate(1.9turn);
-        opacity: 0.7;
-        z-index: 1;
-    }
-
-    .calendar__wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    .calendar__data-table {
-        width: 95%;
-        height: 450px;
-        padding: 20px;
-        margin-top: 20px;
-        margin-bottom: 25px;
-        background: rgba(240, 240, 234, 0.47);
-        border-radius: 5px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(7.9px);
-        -webkit-backdrop-filter: blur(7.9px);
-        border: 1px solid rgba(240, 240, 234, 0.27);
-    }
-
-    .calendar__data-table table {
-        width: 100%;
-        text-align: center;
-    }
-
-    .calendar__data-table table tr th {
-        margin-bottom: 10px;
-        padding: 15px;
-        color: #fff;
-        text-transform: uppercase;
-        border-radius: 7px;
-        background: linear-gradient(180deg, #fccd54 0%, #593710 100%);
-    }
-
-    .calendar__data-table table tr td {
-        padding: 10px;
-        font-weight: 500;
-        color: #fff;
-        border-radius: 6px;
-        border: 1px solid #fff;
-        background-color: #707070;
-        background: rgba(35, 79, 187, 0.36);
-        border-radius: 10px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(10.3px);
-        -webkit-backdrop-filter: blur(10.3px);
-        border: 1px solid rgba(35, 79, 187, 0.21);
-    }
-
     .calendar__time {
         display: flex;
         justify-content: center;
@@ -118,22 +38,40 @@
         -webkit-backdrop-filter: blur(7.9px);
         border: 1px solid rgba(240, 240, 234, 0.27);
     }
-}
 
-@media only screen and (max-width: 1150px) {
-    .calendar {
-        .calendar__takvim {
-            width: 1000px;
-        }
+    .calendar__data-table {
+        display: flex;
+        justify-content: center;
+    }
 
-        .calendar__data-table {
-            display: flex;
-            justify-content: center;
-            width: 90%;
-        }
+    .calendar__table {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(12, 94, 19);
+        border-radius: 20px;
+        background-color: #f0ded0;
+    }
 
-        .calendar__data-table table {
-            width: 90%;
-        }
+    th {
+        // margin-bottom: 10px;
+        padding-bottom: 30px;
+    }
+
+    .tr-bg {
+        width: 80%;
+        background-color: #dacdbd;
+    }
+
+    .tr-ever {
+        color: #fff;
+        background-color: #2eb019;
     }
 }
+
+// @media only screen and (max-width: 1150px) {
+//     .calendar {
+//     }
+// }

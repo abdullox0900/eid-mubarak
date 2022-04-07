@@ -9,6 +9,11 @@
         justify-content: space-between;
     }
 
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+
     .navbar__list {
         display: flex;
         margin: 0;
@@ -25,6 +30,16 @@
         font-weight: 600;
         text-decoration: none;
         color: #351c02;
+    }
+
+    .navbar__select {
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        // color: #351c02;
+        outline: none;
+        border: none;
+        background-color: transparent;
     }
 
     .header__burger-btn {

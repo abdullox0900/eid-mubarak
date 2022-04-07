@@ -419,6 +419,15 @@ img {
           justify-content: space-between;
 }
 
+.header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header .navbar__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -437,6 +446,15 @@ img {
   font-weight: 600;
   text-decoration: none;
   color: #351c02;
+}
+
+.header .navbar__select {
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
 
 .header .header__burger-btn {
@@ -844,97 +862,6 @@ img {
   text-align: center;
 }
 
-.calendar .calendar__takvim {
-  position: relative;
-  margin: 0 auto;
-  padding: 10px;
-  width: 1100px;
-  min-height: 1500px;
-  background: rgba(240, 240, 234, 0.47);
-  border-radius: 20px;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7.9px);
-  -webkit-backdrop-filter: blur(7.9px);
-  border: 1px solid rgba(240, 240, 234, 0.27);
-}
-
-.calendar .calendar__takvim::before {
-  position: absolute;
-  top: 5px;
-  left: 15px;
-  content: "";
-  width: 60px;
-  height: 60px;
-  background-image: url("../../img/Half-Moon.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transform: rotate(1.9turn);
-          transform: rotate(1.9turn);
-  opacity: 0.7;
-  z-index: 1;
-}
-
-.calendar .calendar__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 10px;
-}
-
-.calendar .calendar__data-table {
-  width: 95%;
-  height: 450px;
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 25px;
-  background: rgba(240, 240, 234, 0.47);
-  border-radius: 5px;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7.9px);
-  -webkit-backdrop-filter: blur(7.9px);
-  border: 1px solid rgba(240, 240, 234, 0.27);
-}
-
-.calendar .calendar__data-table table {
-  width: 100%;
-  text-align: center;
-}
-
-.calendar .calendar__data-table table tr th {
-  margin-bottom: 10px;
-  padding: 15px;
-  color: #fff;
-  text-transform: uppercase;
-  border-radius: 7px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fccd54), to(#593710));
-  background: linear-gradient(180deg, #fccd54 0%, #593710 100%);
-}
-
-.calendar .calendar__data-table table tr td {
-  padding: 10px;
-  font-weight: 500;
-  color: #fff;
-  border-radius: 6px;
-  border: 1px solid #fff;
-  background-color: #707070;
-  background: rgba(35, 79, 187, 0.36);
-  border-radius: 10px;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.3px);
-  -webkit-backdrop-filter: blur(10.3px);
-  border: 1px solid rgba(35, 79, 187, 0.21);
-}
-
 .calendar .calendar__time {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -962,21 +889,37 @@ img {
   border: 1px solid rgba(240, 240, 234, 0.27);
 }
 
-@media only screen and (max-width: 1150px) {
-  .calendar .calendar__takvim {
-    width: 1000px;
-  }
-  .calendar .calendar__data-table {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 90%;
-  }
-  .calendar .calendar__data-table table {
-    width: 90%;
-  }
+.calendar .calendar__data-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calendar .calendar__table {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0c5e13;
+  border-radius: 20px;
+  background-color: #f0ded0;
+}
+
+.calendar th {
+  padding-bottom: 30px;
+}
+
+.calendar .tr-bg {
+  width: 80%;
+  background-color: #dacdbd;
+}
+
+.calendar .tr-ever {
+  color: #fff;
+  background-color: #2eb019;
 }
 /*# sourceMappingURL=main.css.map */
