@@ -1,5 +1,8 @@
 "use strict";
 
+let textWrapper = document.querySelector('.ml9 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
 AOS.init({
     debounceDelay: 100,
     throttleDelay: 150,
@@ -7,9 +10,6 @@ AOS.init({
     delay: 0,
     duration: 1500,
 });
-
-let textWrapper = document.querySelector('.ml9 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({ loop: true })
     .add({

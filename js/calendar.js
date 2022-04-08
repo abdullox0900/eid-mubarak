@@ -1,5 +1,21 @@
 "use strict";
 
+AOS.init({
+    debounceDelay: 100,
+    throttleDelay: 150,
+    offset: 200,
+    delay: 0,
+    duration: 1500,
+});
+
+const elMenuBtn = document.querySelector(".header__burger-btn");
+const elHeader = document.querySelector(".header");
+
+elMenuBtn.addEventListener("click", () => {
+    elHeader.classList.toggle("header--open");
+});
+
+
 function showTime() {
     var date = new Date();
     var h = date.getHours(); // 0 - 23
@@ -30,4 +46,4 @@ function showTime() {
 
 showTime();
 
-currentTime();
+// currentTime();

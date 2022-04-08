@@ -922,4 +922,135 @@ img {
   color: #fff;
   background-color: #2eb019;
 }
+
+@media only screen and (max-width: 965px) {
+  .calendar .calendar__img {
+    left: 13%;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  .calendar .calendar__img {
+    left: 8%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .calendar .calendar__img {
+    width: 500px;
+    top: 40%;
+    left: 17%;
+    z-index: -1;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .calendar .calendar__img {
+    width: 400px;
+    top: 30%;
+    left: 17%;
+  }
+  .calendar .calendar__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .calendar .calendar__time {
+    width: 300px;
+    height: 80px;
+    font-size: 30px;
+  }
+  .calendar .calendar__table {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .calendar .calendar__img {
+    width: 300px;
+    top: 30%;
+    left: 20%;
+  }
+  .calendar .calendar__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 38px;
+  }
+  .calendar .calendar__time {
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .calendar .calendar__img {
+    width: 300px;
+    top: 30%;
+    left: 15%;
+  }
+  .calendar .calendar__title {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 38px;
+  }
+  .calendar .calendar__time {
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+  }
+  .calendar .calendar__table {
+    padding: 10px;
+    margin-bottom: 50px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .calendar th {
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .calendar .container {
+    padding: 0;
+  }
+  .calendar .calendar__img {
+    width: 250px;
+    top: 40%;
+    left: 18%;
+  }
+  .calendar .calendar__title {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 34px;
+  }
+  .calendar .calendar__time {
+    width: 200px;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 23px;
+  }
+  .calendar .calendar__table {
+    padding: 10px;
+    margin-bottom: 50px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .calendar th {
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .calendar .calendar__img {
+    top: 30%;
+    left: 10%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
