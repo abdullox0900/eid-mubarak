@@ -60,8 +60,12 @@
         padding-bottom: 30px;
     }
 
+    td {
+        // padding: 2px;
+    }
+
     .tr-bg {
-        width: 80%;
+        // width: 80%;
         background-color: #dacdbd;
     }
 
@@ -219,7 +223,7 @@
             padding: 10px;
             margin-bottom: 50px;
             font-size: 12px;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         th {
